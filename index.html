@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Photography by Redman</title>
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<link href="style.css" rel="stylesheet" type="text/css">
+	
+	
+
+</head>
+
+<body>
+<header>
+		
+<a href="index.html"><img class="logo" src="images/logo2.png" alt=""></a>
+	
+	
+		
+		<div class="navbar">
+			<a href="index.html">HOME</a>
+			<a href="collections.html">COLLECTIONS</a>
+			<a href="articles.html">ARTICLES</a>
+			<a href="contact.html">CONTACT</a>
+</div>
+				<a href="https://www.facebook.com/photographybyredman/"><img class="socials" src="images/facebook.png" alt=""></a>
+			<a href="https://www.instagram.com/photographybyredman/"><img class="socials" src="images/instagram.png" alt=""></a>
+	</header>	
+	
+
+	
+	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <a href="lemonade.html"><img src="images/sliderphotos/DSC_4055.JPG" style="width:100%" alt=""></a>
+</div>
+
+<div class="mySlides fade">
+  <a href="lemonade.html"><img src="images/sliderphotos/DSC_7182.JPG" style="width:100%" alt=""></a>
+</div>
+
+<div class="mySlides fade">
+  <a href="space-donuts.html"><img src="images/sliderphotos/DSC_7544.JPG" style="width:100%" alt=""></a>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+	
+	<div class="collage">
+		
+<img src="images/collage.png" alt="" width="100%">
+<button><a href="collections.html">More Photos</a></button>
+	</div>
+
+
+	<footer> 
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="collections.html">COLLECTIONS</a></li>
+			<li><a href="articles.html">ARTICLES</a></li>
+			<li><a href="contact.html">CONTACT</a></li>
+	  </ul>
+	<h5>&copy; DOMINIQUE DEMETZ</h5>
+	</footer>
+	
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); 
+}
+</script>
+
+	
+</body>
+	
+</html>
